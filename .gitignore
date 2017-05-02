@@ -38,3 +38,6 @@ jspm_packages
 
 #Idea IDEs
 .idea/
+
+node_modules/
+dist/
