@@ -1,11 +1,29 @@
 {
-  "name": "safUi",
-  "description": "",
-  "dependencies": {
-    "open-color": "^1.4.2"
-  },
-  "devDependencies": {},
+  "name": "safui",
+  "version": "0.0.1",
+  "description": "Internal UI Framework for FlexiSAF Applications",
+  "main": "index.html",
   "scripts": {
+    "build-css": "node-sass --include-path sass sass/main.scss  css/main.css",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\"",
+    "start": "webpack --config mywebpack.config.js",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbatykori/safUi.git"
+  },
+  "author": "@abbatykori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abbatykori/safUi/issues"
+  },
+  "homepage": "https://github.com/abbatykori/safUi#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
+    "open-color": "^1.5.1",
+    "webpack": "^2.4.1"
   }
 }

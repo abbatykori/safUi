@@ -1,0 +1,12 @@
+//Default Theme
+
+a, a:visited{
+  color: $oc-gray-7;
+  &:hover{
+    color: $oc-black;
+  }
+}
+
+a.active{
+    color: $oc-black;
+}
